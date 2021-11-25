@@ -1,0 +1,7 @@
+/node_modules
+/public/dist
+/src/components
+/dist
+
+
+#ignore upload config

@@ -1,0 +1,43 @@
+:root{
+    --background :#0D1023;
+    --button : linear-gradient(#df56ad 0%, #0d1023 96.23%, #702b57 100%);
+  --border: #707070;
+  --text-color:#ffffff;
+  --sec-color:#DF56AD;
+  }
+  
+  #app {
+    background:var(--background);
+   font-family: 'Poppins', sans-serif;
+    color:var(--text-color);
+    
+  }
+  
+  #brand{
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
+  color:var(--text-color);
+  }
+  
+  #brand span{
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+  color: var(--sec-color);
+  
+  }
+  
+  .nav-link{
+    font-family: Poppins;
+  font-weight: light;
+  font-size: 20px;
+  text-align: center;
+  color: var(--text-color) !important;
+  }
+  
+  
+  .nav-link:hover{
+   color: var(--sec-color); 
+  
+  }
