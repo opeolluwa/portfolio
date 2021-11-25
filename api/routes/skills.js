@@ -16,7 +16,7 @@ const corsOptions = {
 
 router.use(cors())
 
-//search route
+//default get all skills
 router.get('/', (req, res) => {
     database.connect(function (err) {
         if (err) {
@@ -31,5 +31,20 @@ router.get('/', (req, res) => {
         if (err) return res.json({ rows: null, errors: err.message, })
         else return res.json({ rows, errors: null })
     })
+})
+
+//Add skill
+router.post("/add", (req, res)=>{
+    res.send({message: "add skill"})
+})
+
+
+router.delete("/remove", (req, res)=>{
+    res.send({message: "remove skill"})
+})
+
+//update skill
+router.put("/update", (req, res)=>{
+    res.send({message: "update skill"})
 })
 module.exports = router
