@@ -3,7 +3,7 @@ import VueRouter from "vue-router";
 import Home from "./../views/Home.vue"
 import Contact from "./../components/Contact.vue"
 import NotFound from "./../components/404.vue"
-
+import Redbull from "./../views/Redbull.vue"
 
 Vue.use(VueRouter);
 
@@ -13,6 +13,10 @@ const routes = [
     path: "/",
     name: 'home',
     component: Home
+  },
+  {
+    path: "/witchofendor",
+    component: Redbull
   },
   {
     path: "/contact",

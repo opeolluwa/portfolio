@@ -47,6 +47,8 @@ body {
 }
 body {
   width: 100vw;
+  background: var(--background);
+
 }
 .section {
   padding: 7.5vh 12vw;
@@ -126,10 +128,6 @@ p {
   box-sizing: border-box;
 }
 
-a {
-  color: #fff !important;
-  text-decoration: none !important;
-}
 a:hover {
   color: var(--sec-color) !important;
   transition: 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
