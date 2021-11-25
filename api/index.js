@@ -1,20 +1,24 @@
+require('dotenv').config()
 const express = require('express')
-const { Skills } = require('./models')
 const PORT = process.env.PORT || 3000
 const app = express()
+const cors = require('cors')
+const skills = require('./routes/skills')
 
 
+const corsOptions = {
+    // origin: 'http://opeolluwa.mdbgo.io/',
+    origin: 'http://localhost:3003/',
+    optionsSuccessStatus: 200
+}
 
+app.use(cors(corsOptions))
 
 
 app.get('/', (req, res) => {
-    res.send("This is root!")
+    res.send("ignitin started")
 })
-
-app.get('/skills', async (req, res) => {
-    const skills = await Skills.findAll()
-    res.json(skills)
-})
+app.use("/skills", skills)
 
 app.listen(PORT, () => {
     console.log(`Express server listening on port ${PORT}`)

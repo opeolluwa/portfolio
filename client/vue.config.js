@@ -1,7 +1,7 @@
 module.exports = {
     devServer: {
         //  proxy: "https://api.opeolluwa.mdbgo.io/"
-        proxy: "https://localhost:3000/"
+        proxy: "http://localhost:5000/"
     }
 }
 
