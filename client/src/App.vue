@@ -1,6 +1,6 @@
 <template>
   <!--container-->
-  <div id="app" class="mt-0 pt-1">
+  <div id="app" class="mt-0 pt-0">
     <navigation/>
     <transition
       mode="out-in"
@@ -51,7 +51,7 @@ body {
 
 }
 .section {
-  padding: 7.5vh 12vw;
+  padding: 10.5vh 12vw;
   min-height: 100vh;
 }
 :root {
@@ -120,16 +120,15 @@ p {
   }
 }
 .section {
-  padding: 40px 15vw;
-  padding-top: 20px;
+  padding: 120px 15vw;
   color: var(--text-color);
   min-height: 105vh;
-  width: 100vw;
+  min-width: 100vw;
   box-sizing: border-box;
 }
 
 a:hover {
-  color: var(--sec-color) !important;
+  color: var(--default-dark-color) !important;
   transition: 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 </style>
