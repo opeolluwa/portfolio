@@ -11,6 +11,7 @@ const projects = require('./routes/projects')
 
 
 app.use(cors())
+app.use(express.json())
 app.use("/skills", skills)
 app.use("/mails", mails)
 app.use("/projects", projects)

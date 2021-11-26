@@ -18,7 +18,7 @@ router.get('/', (req, res) => {
     });
 
 
-    database.query("SELECT * FROM projects", (err, rows) => {
+    database.query("SELECT * FROM project", (err, rows) => {
         if (err) return res.json({ rows: null, errors: err.message, })
         else return res.json({ rows, errors: null })
     })
@@ -30,12 +30,12 @@ router.post("/add", (req, res) => {
 })
 
 
-router.delete("/remove", (req, res) => {
+router.delete("/remove/:project_name", (req, res) => {
     res.send({ message: "remove project" })
 })
 
 //update project
-router.put("/update", (req, res) => {
+router.put("/update/:project_name", (req, res) => {
     res.send({ message: "update project" })
 })
 module.exports = router
