@@ -1,22 +1,23 @@
-const nodemailer = require("nodemailer");
+// const nodemailer = require("nodemailer");
 const express = require('express')
 const router = express.Router()
 const cors = require('cors')
 require('dotenv').config()
-const database = require("./../config/config.database")
+// const database = require("./../config/config.database")
+
 
 router.use(cors())
 
 
-router.post('/send', (req, res) => {
-    const { email, subject, message, name } = req.body
-    console.log(email, subject, message, name)
-    return res.send({ email, subject, message, name })
+router.post('/', (req, res) => {
+    const email = req.body
+    console.log(email);
+ return   res.send({ query: "jyfkldjx", email })
 })
 
-router.post('/all', (req, res) => {
-    return res.send({ message: "get all bro" })
-})
+// router.post('/all', (req, res) => {
+//     return res.send({ message: "get all bro" })
+// })
 
 
 

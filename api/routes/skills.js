@@ -5,15 +5,6 @@ require('dotenv').config()
 const database = require("./../config/config.database")
 
 
-
-
-
-const corsOptions = {
-    // origin: 'http://opeolluwa.mdbgo.io/',
-    origin: 'http://localhost:3003/',
-    optionsSuccessStatus: 200
-}
-
 router.use(cors())
 
 //default get all skills
