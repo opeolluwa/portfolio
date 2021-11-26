@@ -5,18 +5,9 @@ require('dotenv').config()
 const database = require("./../config/config.database")
 
 
-
-
-
-const corsOptions = {
-    // origin: 'http://opeolluwa.mdbgo.io/',
-    origin: 'http://localhost:3003/',
-    optionsSuccessStatus: 200
-}
-
 router.use(cors())
 
-//default get all skills
+//default get all projects
 router.get('/', (req, res) => {
     database.connect(function (err) {
         if (err) {
@@ -27,24 +18,24 @@ router.get('/', (req, res) => {
     });
 
 
-    database.query("SELECT * FROM skills", (err, rows) => {
+    database.query("SELECT * FROM projects", (err, rows) => {
         if (err) return res.json({ rows: null, errors: err.message, })
         else return res.json({ rows, errors: null })
     })
 })
 
-//Add skill
-router.post("/add", (req, res)=>{
-    res.send({message: "add skill"})
+//Add project
+router.post("/add", (req, res) => {
+    res.send({ message: "add project" })
 })
 
 
-router.delete("/remove", (req, res)=>{
-    res.send({message: "remove skill"})
+router.delete("/remove", (req, res) => {
+    res.send({ message: "remove project" })
 })
 
-//update skill
-router.put("/update", (req, res)=>{
-    res.send({message: "update skill"})
+//update project
+router.put("/update", (req, res) => {
+    res.send({ message: "update project" })
 })
 module.exports = router
