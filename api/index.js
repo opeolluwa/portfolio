@@ -3,8 +3,6 @@ const express = require('express')
 const PORT = process.env.PORT || 3000
 const app = express()
 const cors = require('cors')
-const skills = require('./routes/skills')
-
 
 const corsOptions = {
     // origin: 'http://opeolluwa.mdbgo.io/',
@@ -15,10 +13,18 @@ const corsOptions = {
 app.use(cors(corsOptions))
 
 
+
+const skills = require('./routes/skills')
+const mails = require('./routes/mails')
+
+
+
+
 app.get('/', (req, res) => {
     res.send("ignitin started")
 })
 app.use("/skills", skills)
+app.use("/mails", mails)
 
 app.listen(PORT, () => {
     console.log(`Express server listening on port ${PORT}`)
