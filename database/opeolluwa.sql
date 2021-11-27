@@ -16,6 +16,60 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `contacts`
+--
+
+DROP TABLE IF EXISTS `contacts`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `contacts` (
+  `contact_id` int NOT NULL AUTO_INCREMENT,
+  `contact_name` varchar(200) DEFAULT NULL,
+  `contact_email` varchar(200) DEFAULT NULL,
+  `contact_phone` varchar(50) DEFAULT NULL,
+  `date_added` datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`contact_id`),
+  UNIQUE KEY `contact_email` (`contact_email`),
+  UNIQUE KEY `contact_phone` (`contact_phone`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `contacts`
+--
+
+LOCK TABLES `contacts` WRITE;
+/*!40000 ALTER TABLE `contacts` DISABLE KEYS */;
+/*!40000 ALTER TABLE `contacts` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `emails`
+--
+
+DROP TABLE IF EXISTS `emails`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `emails` (
+  `email_id` int NOT NULL AUTO_INCREMENT,
+  `sender_name` varchar(200) DEFAULT NULL,
+  `sender_email` varchar(200) DEFAULT NULL,
+  `subject` text,
+  `date_sent` datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`email_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `emails`
+--
+
+LOCK TABLES `emails` WRITE;
+/*!40000 ALTER TABLE `emails` DISABLE KEYS */;
+/*!40000 ALTER TABLE `emails` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `project`
 --
 
@@ -24,6 +78,7 @@ DROP TABLE IF EXISTS `project`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `project` (
   `project_id` int NOT NULL AUTO_INCREMENT,
+  `project_thumbtile` varchar(200) DEFAULT NULL,
   `project_name` varchar(200) NOT NULL,
   `project_description` varchar(300) NOT NULL,
   `project_source_code` varchar(100) NOT NULL,
@@ -84,4 +139,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-26  0:56:01
+-- Dump completed on 2021-11-27 14:33:30
