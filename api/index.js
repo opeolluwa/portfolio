@@ -10,7 +10,9 @@ const mails = require('./routes/mails')
 const projects = require('./routes/projects')
 const contacts = require('./routes/contacts')
 const auth = require('./routes/auth')
-
+app.get("/", (req, res) => {
+    res.send("it all begin here")
+})
 
 app.use(cors())
 app.use(express.json())

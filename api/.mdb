@@ -1,0 +1,11 @@
+{
+  "packageManager": "npm",
+  "projectName": "api",
+  "hash": "063e57b2",
+  "backend": {
+    "platform": "node12"
+  },
+  "meta": {
+    "type": "backend"
+  }
+}
