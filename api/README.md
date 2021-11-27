@@ -16,9 +16,9 @@ but it should well with any other RDMS_
 - Managing Contacts
 - News letter authoring and management
 - Sending emails using templates
-- File manager 
+- File manager
 
-### Installation
+## INSTALLATION
 
 Enter the following command in your terminal
 
@@ -29,10 +29,29 @@ Enter the following command in your terminal
  npm run dev
 ```
 
-### GUIDE
-- 
+## GUIDE
 
-2. To use any of the service visit
+- Database
+
+  - contact
+  - mails
+  - user auth
+  - skill
+  - project
+
+- Routes
+  - contact
+  - authentication
+  - mails
+  - skills
+  - project
+  
+
+
+  ### Guide 
+  1. Database 
+  
+  
 
 ```cURL
  http:// localhost:3000/service
@@ -40,5 +59,3 @@ Enter the following command in your terminal
 
 eg, using mail and file manager would be
 `http:// localhost:3000/mail` and `http:// localhost:3000/files ` respectively
-
-

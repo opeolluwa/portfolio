@@ -18,7 +18,7 @@ app.use("/skills", skills)
 app.use("/mails", mails)
 app.use("/projects", projects)
 app.use("/contacts", contacts)
-app.use("/auth", auth)
+// app.use("/auth", auth)
 
 
 app.listen(PORT, () => {
