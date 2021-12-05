@@ -9,6 +9,9 @@ const skills = require('./routes/skills')
 const mails = require('./routes/mails')
 const projects = require('./routes/projects')
 
+app.get("/", (req, res) => {
+    res.send("hello boyz")
+})
 
 app.use(cors())
 app.use(express.json())
