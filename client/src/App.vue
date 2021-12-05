@@ -1,6 +1,6 @@
 <template>
   <!--container-->
-  <div id="app" class="mt-0 pt-0">
+  <div id="app" class="mt-0 pt-0 px-0 mx-0">
     <navigation/>
     <transition
       mode="out-in"
@@ -44,10 +44,10 @@ body {
   overflow-x: hidden !important;
   scroll-behavior: smooth;
   font-size: 16px;
+
 }
 body {
   width: 100vw;
-  background: var(--background);
 
 }
 .section {
@@ -94,7 +94,7 @@ body {
   justify-content: space-evenly;
   bottom: 3vh;
   z-index: 1000;
-  left: 3;
+  left: 7;
   transform: translateY(-50%);
 }
 

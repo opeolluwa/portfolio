@@ -7,5 +7,6 @@
   },
   "meta": {
     "type": "backend"
-  }
+  },
+  "domain": "api.opeolluwa.mdbgo.io"
 }
