@@ -1,0 +1,11 @@
+{
+  "packageManager": "npm",
+  "projectName": "proxies",
+  "hash": "057514d2",
+  "backend": {
+    "platform": "node12"
+  },
+  "meta": {
+    "type": "backend"
+  }
+}
