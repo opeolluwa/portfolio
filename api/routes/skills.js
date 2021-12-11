@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
             console.error('error connecting: ' + err.stack);
             return;
         }
-        console.log('connected as id ' + database.threadId, req.header);
+        console.log('connected as id ' + database.threadId, req.headers["user-agent"]);
     });
 
 
