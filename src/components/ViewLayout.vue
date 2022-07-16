@@ -1,12 +1,17 @@
 <template>
-    <v-container></v-container>
+    <v-container class="view-container">
+        <slot></slot>
+    </v-container>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from 'vue'
 
-}
+export default Vue.extend({
+    name: 'ViewLayout',
+    components: {
+    },
+})
 </script>
-
 <style>
 </style>
