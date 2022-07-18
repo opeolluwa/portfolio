@@ -30,6 +30,9 @@
             <li class="nav-item">
                 <router-link to="/contact">project</router-link>
             </li>
+            <li class="nav-item">
+                <router-link to="/resume">Resume</router-link>
+            </li>
         </ul>
 
         <ul id="socials">

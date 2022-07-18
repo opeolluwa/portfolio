@@ -1,19 +1,19 @@
 <template>
 
     <div style="width: 100%">
-        <v-card-text>
+        <div>
             <v-btn v-for="icon in icons" :key="icon" class="mx-4" icon>
                 <v-icon size="24px">
                     {{ icon }}
                 </v-icon>
             </v-btn>
-        </v-card-text>
+        </div>
 
         <v-divider></v-divider>
 
-        <v-card-text class="white--text">
+        <div class="white--text">
             {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
-        </v-card-text>
+        </div>
     </div>
 
 </template>

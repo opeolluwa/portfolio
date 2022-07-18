@@ -22,3 +22,28 @@
     padding-right: 50px;
   }
 }
+
+.sub-hero {
+  line-height: 36px;
+  font-size: 1.5rem;
+
+  @media (max-width: 768px) {
+    line-height: 35px;
+    font-size: 1.7rem;
+  }
+
+  @media (max-width: 576px) {
+    line-height: 35px;
+    font-size: 1.65rem;
+  }
+
+  @media (max-width: 480px) {
+    line-height: 32px;
+    font-size: 1.47rem;
+  }
+
+  @media (max-width: 360px) {
+    line-height: 30px;
+    font-size: 1.27rem;
+  }
+}

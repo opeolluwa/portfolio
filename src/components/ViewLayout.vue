@@ -1,5 +1,5 @@
 <template>
-    <v-container class="view-container">
+    <v-container>
         <slot></slot>
     </v-container>
 </template>

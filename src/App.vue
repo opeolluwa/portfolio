@@ -6,7 +6,7 @@
     </v-app-bar>
 
 
-    <v-main class="view-container">
+    <v-main>
       <router-view />
     </v-main>
 
